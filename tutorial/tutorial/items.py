@@ -6,6 +6,7 @@
 # http://doc.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+from scrapy.item import Item, Field
 
 
 class TutorialItem(scrapy.Item):
@@ -16,6 +17,10 @@ class TutorialItem(scrapy.Item):
 	
 	
 class XinItem(scrapy.Item):
-    title=Field()
-	link=Field()
-	desc=Field()
+    Title=Field()
+    Location=Field()
+    Brand=Field()
+    Model=Field()
+    Time=Field()
+    Mileage=Field()
+	
